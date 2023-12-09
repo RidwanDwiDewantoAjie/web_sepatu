@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UTS RIDWANDWI</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="style.css"  href="style.css">
+
+</head>
+  <style>
+  
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+  }
+
+   .left    { text-align: left;}
+   .right   { text-align: right;}
+   .center  { text-align: center;}
+   .justify { text-align: justify;}
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .produk {
+    margin-top: 1rem;
+  }
+  
+  #hero {
+    height: 400px;
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d1c322;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .btn1 {
+    display: inline-block;
+    background-color: #4e77f4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .btn3 {
+    display: inline-block;
+    background-color: #af0b0b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  } 
+  
+  .btn4 {
+    display: inline-block;
+    background-color: #af0b0b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn2 {
+    display: inline-block;
+    background-color: #af0b0b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px
+  }
+     
+  .btn5 {
+    display: inline-block;
+    background-color: #4e77f4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px
+  }
+
+/* Set margin dan padding menjadi 0 */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* Tambahkan gambar latar belakang dan atur ukurannya */
+  body {
+    background-image: url('https://example.com/background.jpg');
+    background-size: cover;
+  }
+  
+  /* Atur tampilan header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tambahkan animasi ketika tombol dihover */
+  button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Atur tampilan footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+    
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	  <div class="container">
+      <img src="images/p.jpg" alt=""  width="100">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active">
+	          <a class="nav-link" href="#">Beranda</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#about">Tentang Kami</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#produk">Produk</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#kontak">Kontak</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- Beranda -->
+	<section id="beranda" style="margin-top: 100px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Sepatu PATROBAS</h1>
+					<p>Kami menyediakan sepatu berkualitas tinggi dengan harga terjangkau.</p>
+					<a href="#produk" class="btn1 btn-lg btn-warning">Lihat Produk</a>
+				</div>
+				<div class="col-md-6">
+					<img src="images/2.jpg" alt="Gambar Sepatu" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Tentang Kami -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Tentang Kami</h2>
+					<p class="justify-content">Patrobas adalah sepatu lokal Indonesia asal kota Tangerang </br>Selatan ini memiliki logo "PB", yang merupakan singkatan dari "price"</br> dan "benefit". Tentu saja, sepatu lokal Indonesia ini mempunyai banderol <br>br>harga yang terjangkau, tapi berkualitas. Patrobas memiliki satu siluet dengan warna relatif mencolok, yaitu Ivan Forest berpotongan rendah yang didominasi warna hijau dan aksen putih. Harga sepatu lokal Indonesia ini dilabeli Rp 239.900, dan bisa didapat di platform e-commerce, akun Instagram <a href="https://instagram.com/patrobas.id?igshid=YmMyMTA2M2Y="> @patrobas.id</a>, atau situs resmi mereka, patrobas.id.
+            Artikel ini telah tayang di Kontan.co.id dengan judul "Murah tapi keren, ini 5 sepatu lokal Indonesia dengan harga di bawah Rp 500.000.
+            </p>
+				</div>
+				<div class="col-md-6">
+					<img src="images/1.jpg" alt="Gambar Perusahaan" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Produk -->
+	<section id="produk">
+                <div class="container mt-5">
+                    <h2>Produk Kami</h2>
+                    <div class="row mt-4">
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="images/produk 1.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title"> Cloud Navy Sneakers</h4>
+                            <p class="card-text">Terinspirasi dari awan yang konon empuk dan lembut, Patrobas Cloud dirancang dengan kenyamanan 3 in 1 : 1. Collar berbahan Mesh (anti-lecet) 2. Insole Patrofoam tech
+                              3. Lining breathable mesh Didesain untuk #gengpatrobas yang memiliki keseharian dengan mobilitas tinggi agar tetap merasakan kenyamanan yang maksimal</p>
+                            <a href="#" class="btn2 btn-success">Beli Sekarang</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img/produk2.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Sepatu Olahraga</h4>
+                            <p class="card-text">Sepatu Olahraga untuk meningkatkan performa saat berolahraga</p>
+                            <a href="#" class="btn3 btn-success">Beli Sekarang</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                          <img class="card-img-top" src="img/produk3.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Sepatu Formal</h4>
+                            <p class="card-text">Sepatu Formal untuk tampil elegan di acara formal</p>
+                            <a href="#" class="btn4 btn-success">Beli Sekarang</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+         <!-- Kontak -->         
+         <section id="kontak">
+                    <div class="container">
+                        <h2>Kontak Kami</h2>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="pesan">Pesan</label>
+                                    <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda"></textarea>
+                                  </div>
+                                  <button type="submit" class="btn5 btn-success">Kirim</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Footer -->
+                <footer class="bg-dark text-white mt-5">
+                    <div class="container"> <footer>
+                      <div class="dark p-5 pl-5 pr-5">
+                          <div class="row no-gutters d-flex flexbox">
+                              <div class="font pl-5 pr-5" style="font-size: 17pt; color: white;">
+                                  <p alig ="left"><b>PATROBAS</b><br></p>
+                                  <div style="font-size: 12pt;" class="padd">
+                                    Sepatu berkualitas harga terjangkau.<br> Jadi bagian dari #GengPatrobas sekarang!<br>
+                                  </div>
+                              </div>
+                  
+                              <div class="font pl-5 pr-5 " style="font-size: 17pt; color: white;">
+                                  <p alig="left"><b>Navigasi</b><br></p>
+                                  <div style="font-size: 12pt;">
+                                      <li>Beranda</li>
+                                      <li class="mt-1">Tentang Kami</li>
+                                      <li class="mt-1">Produk</li>
+                                      <li class="mt-1">Kontak</li>
+                                  </div>
+                              </div>
+                              <div class="font pl-5 pr-5" style="font-size: 17pt; color: white;">
+                                  <p alig="left"><b>Hubungi Kami</b><br></p>
+                                  <div style="font-size: 9pt;">
+                                      <div class="padd-right mt-1">
+                                      <b> Patrobas Warehouse <br> Serpong, Tangerang Selatan <br> Banten <br>
+                                      <b>Telp CS Patrobas:</b> +62 877-7798-7540 <br>
+                                      <b>Email Support: patrobas.shoes@gmail.com</b> 
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      </footer>
+                        <div class="row">
+                            <div class="col text-center">
+                              <footer>
+                                <p>© 2023 Patrobas Indonesia. All Rights Reserved.S</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+                <!-- jQuery -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <!-- Popper.js -->
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+                <!-- Bootstrap JS -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
